@@ -24,16 +24,17 @@ struct HomeView: View {
                 .padding(.top, 4.0)
             
             if showLocationSearchView {
+                //To Actual Search Screen
                 LocationSearchView(showLocationSearchView: $showLocationSearchView)
             }else {
-                //Home Screen
+                //To Home Screen
                 LocationSearchActivationView()
                     .padding(.top, 72.0)
                     .onTapGesture {
                         withAnimation(.spring()) {
                             showLocationSearchView.toggle()
-                        }
                     }
+                }
             }
         }
     }
