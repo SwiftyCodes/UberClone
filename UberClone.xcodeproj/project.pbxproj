@@ -65,10 +65,10 @@
 		1066A5A82A00E26800DC5115 /* UberClone */ = {
 			isa = PBXGroup;
 			children = (
+				1066A5B92A00E28700DC5115 /* App */,
 				1066A5BC2A00E32F00DC5115 /* Managers */,
 				1066A5B72A00E27C00DC5115 /* Util */,
 				1066A5B82A00E28000DC5115 /* Extension */,
-				1066A5B92A00E28700DC5115 /* App */,
 				1066A5BA2A00E29000DC5115 /* Core */,
 				1066A5AD2A00E26B00DC5115 /* Assets.xcassets */,
 				1066A5AF2A00E26B00DC5115 /* Preview Content */,
@@ -118,9 +118,9 @@
 		1066A5BB2A00E29800DC5115 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1066A5CA2A010AA700DC5115 /* MapViewActionButton.swift */,
-				1066A5BE2A00E35800DC5115 /* HomeView.swift */,
 				1066A5C02A00E42600DC5115 /* UberMapViewRepresentable.swift */,
+				1066A5BE2A00E35800DC5115 /* HomeView.swift */,
+				1066A5CA2A010AA700DC5115 /* MapViewActionButton.swift */,
 				10F68CB82A011209003BEB8C /* LocationSearchResultCell.swift */,
 			);
 			path = Views;

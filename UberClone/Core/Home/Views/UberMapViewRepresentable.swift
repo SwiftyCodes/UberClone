@@ -17,9 +17,11 @@ import MapKit
 
 struct UberMapViewRepresentable : UIViewRepresentable {
     
+    @EnvironmentObject var locationSearchViewModel : LocationSearchViewModel
+    
     let mapView = MKMapView()
     let locationManager = LocationManager()
-    
+
     func makeUIView(context: Context) -> some UIView {
         // Do the initial Set up here
         //context.coordinator --> is the MapCoodinator here or the middleman // the Mapview Delegate things / Functionality Level things
@@ -33,6 +35,9 @@ struct UberMapViewRepresentable : UIViewRepresentable {
     func updateUIView(_ uiView: UIViewType, context: Context) {
         // Update the Views or Mapview in this case here
         //Like draw lines and etc.
+        if let selectedLocation = locationSearchViewModel.selectedLocation {
+            print("DEBUG : selected location is \(selectedLocation)")
+        }
     }
     
     //This represents middleman which will be coordinated with.
